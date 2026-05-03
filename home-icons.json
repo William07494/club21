@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "version": 2,
+    "source": "local-json",
+    "updatedAt": "2026-05-02T12:00:00Z"
+  },
+  "avatar": "",
+  "center": {
+    "mode": "avatar",
+    "avatarImage": "",
+    "image": "",
+    "label": "Tu universo Club 21",
+    "accent": "Secciones dinamicas listas para editar desde el panel admin."
+  },
+  "sections": [
+    {
+      "id": "premios",
+      "title": "Premios",
+      "image": "",
+      "iconImage": "",
+      "action": "open_section",
+      "link": "#t-prizes",
+      "description": "Canjes y aliados para usar tus puntos.",
+      "order": 1,
+      "visible": true,
+      "items": [
+        {
+          "id": "premios-1",
+          "name": "Reset Burger Express",
+          "image": "",
+          "whatsapp": "51960079002",
+          "message": "Hola, quiero informacion sobre premios de {seccion} en {local}. Soy {nombre_cliente}.",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "premios-2",
+          "name": "Cafe Club 21",
+          "image": "",
+          "whatsapp": "51960079003",
+          "message": "Hola, deseo conocer las opciones de {local} dentro de {seccion}. Soy {nombre_cliente}.",
+          "enabled": true,
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "ranking",
+      "title": "Ranking",
+      "image": "",
+      "iconImage": "",
+      "action": "open_section",
+      "link": "#t-ranking",
+      "description": "Metas, puestos y retos de la comunidad.",
+      "order": 2,
+      "visible": true,
+      "items": [
+        {
+          "id": "ranking-1",
+          "name": "Ranking mensual",
+          "image": "",
+          "whatsapp": "51960079004",
+          "message": "Hola, quiero detalles del {local} de {seccion}. Soy {nombre_cliente}.",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "ranking-2",
+          "name": "Meta Black",
+          "image": "",
+          "whatsapp": "51960079005",
+          "message": "Hola, deseo saber como alcanzar {local}. Soy {nombre_cliente}.",
+          "enabled": true,
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "historial",
+      "title": "Historial",
+      "image": "",
+      "iconImage": "",
+      "action": "open_section",
+      "link": "#t-hist",
+      "description": "Movimientos, visitas y seguimiento de tu cuenta.",
+      "order": 3,
+      "visible": true,
+      "items": [
+        {
+          "id": "historial-1",
+          "name": "Visitas registradas",
+          "image": "",
+          "whatsapp": "51960079006",
+          "message": "Hola, necesito ayuda con mi {local} en {seccion}. Soy {nombre_cliente}.",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "historial-2",
+          "name": "Canjes recientes",
+          "image": "",
+          "whatsapp": "51960079007",
+          "message": "Hola, quiero revisar {local}. Soy {nombre_cliente}.",
+          "enabled": true,
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "locales",
+      "title": "Locales",
+      "image": "",
+      "iconImage": "",
+      "action": "open_section",
+      "link": "#client-locales-section",
+      "description": "Locales y marcas asociadas del Club 21.",
+      "order": 4,
+      "visible": true,
+      "items": [
+        {
+          "id": "locales-1",
+          "name": "Estacion 21 Centro",
+          "image": "",
+          "whatsapp": "51960079008",
+          "message": "Hola, quiero escribir a {local} desde Club 21. Soy {nombre_cliente}.",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "locales-2",
+          "name": "Reset Barberia Spa",
+          "image": "",
+          "whatsapp": "51960079009",
+          "message": "Hola, quiero mas informacion de {local}. Soy {nombre_cliente}.",
+          "enabled": true,
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "promos",
+      "title": "Promos",
+      "image": "",
+      "iconImage": "",
+      "action": "open_section",
+      "link": "#client-promos-section",
+      "description": "Promociones activas y mensajes listos para WhatsApp.",
+      "order": 5,
+      "visible": true,
+      "items": [
+        {
+          "id": "promos-1",
+          "name": "Burger Night 2x1",
+          "image": "",
+          "whatsapp": "51960079010",
+          "message": "Hola, me interesa la promo {local}. Soy {nombre_cliente}.",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "promos-2",
+          "name": "Brunch Weekend",
+          "image": "",
+          "whatsapp": "51960079011",
+          "message": "Hola, quiero informacion de la promo {local}. Soy {nombre_cliente}.",
+          "enabled": true,
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "beneficios",
+      "title": "Beneficios",
+      "image": "",
+      "iconImage": "",
+      "action": "open_section",
+      "link": "#client-benefits-section",
+      "description": "Ventajas, upgrades y experiencias especiales.",
+      "order": 6,
+      "visible": true,
+      "items": [
+        {
+          "id": "beneficios-1",
+          "name": "Upgrade Signature",
+          "image": "",
+          "whatsapp": "51960079012",
+          "message": "Hola, quiero conocer el beneficio {local}. Soy {nombre_cliente}.",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "beneficios-2",
+          "name": "Cumple Club 21",
+          "image": "",
+          "whatsapp": "51960079013",
+          "message": "Hola, deseo activar el beneficio {local}. Soy {nombre_cliente}.",
+          "enabled": true,
+          "order": 2
+        }
+      ]
+    }
+  ]
+}
