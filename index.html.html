@@ -819,11 +819,8 @@
     /* Info: cómo ganar puntos */
     /* === TU UNIVERSO CLUB 21 — Premium Dark Gold === */
     .orbit-home-card {
-      margin: 16px 0 14px;
-      padding: 24px 20px 22px;
-      position: relative;
-      overflow: hidden;
-      border-radius: 28px;
+      margin: 16px 0 14px; padding: 24px 20px 22px;
+      position: relative; overflow: hidden; border-radius: 28px;
       background:
         radial-gradient(ellipse 80% 55% at 18% -8%, rgba(212,175,55,0.20) 0%, transparent 58%),
         radial-gradient(ellipse 65% 50% at 88% 108%, rgba(180,130,20,0.13) 0%, transparent 55%),
@@ -832,150 +829,54 @@
       box-shadow: 0 0 0 1px rgba(212,175,55,0.07), 0 40px 80px -20px rgba(0,0,0,0.75), inset 0 1px 0 rgba(255,255,255,0.07);
     }
     .orbit-home-card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
+      content: ''; position: absolute; inset: 0;
       background-image:
         radial-gradient(circle 1.5px at 18% 28%, rgba(212,175,55,0.7) 0%, transparent 0%),
         radial-gradient(circle 1px at 72% 18%, rgba(212,175,55,0.45) 0%, transparent 0%),
         radial-gradient(circle 1px at 48% 72%, rgba(212,175,55,0.55) 0%, transparent 0%),
         radial-gradient(circle 2px at 83% 62%, rgba(212,175,55,0.3) 0%, transparent 0%),
         radial-gradient(circle 1px at 9% 82%, rgba(212,175,55,0.4) 0%, transparent 0%);
-      pointer-events: none;
-      z-index: 0;
+      pointer-events: none; z-index: 0;
     }
     .orbit-home-card::after {
-      content: '';
-      position: absolute;
-      inset: auto -60px -80px auto;
-      width: 280px; height: 280px;
-      border-radius: 50%;
+      content: ''; position: absolute; inset: auto -60px -80px auto;
+      width: 280px; height: 280px; border-radius: 50%;
       background: radial-gradient(circle, rgba(212,175,55,0.08), transparent 70%);
       pointer-events: none; z-index: 0;
     }
     .orbit-home-card > * { position: relative; z-index: 1; }
-    #home-orbit-card .section-title {
-      font-size: 9.5px; font-weight: 800;
-      color: rgba(212,175,55,0.65); letter-spacing: 0.22em; margin-bottom: 10px;
-    }
+    #home-orbit-card .section-title { font-size: 9.5px; font-weight: 800; color: rgba(212,175,55,0.65); letter-spacing: 0.22em; margin-bottom: 10px; }
     #home-orbit-card .section-title::before { background: rgba(212,175,55,0.55); }
     .orbit-home-copy { margin-bottom: 10px; display: grid; gap: 3px; }
     .orbit-home-copy b {
-      display: block; font-family: var(--font-display); font-size: 20px;
-      font-weight: 800; line-height: 1.05; letter-spacing: -0.02em;
+      display: block; font-family: var(--font-display); font-size: 20px; font-weight: 800;
+      line-height: 1.05; letter-spacing: -0.02em;
       background: linear-gradient(130deg, #f7eaac 0%, #D4AF37 42%, #b8891a 100%);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
     .orbit-home-copy span { display: block; font-size: 11.5px; color: rgba(255,255,255,0.38); line-height: 1.45; }
-    .orbit-home-stage {
-      position: relative; height: clamp(260px, 70vw, 344px);
-      display: flex; align-items: center; justify-content: center;
-      isolation: isolate; margin-bottom: 10px;
-    }
+    .orbit-home-stage { position: relative; height: clamp(260px, 70vw, 344px); display: flex; align-items: center; justify-content: center; isolation: isolate; margin-bottom: 10px; }
     .orbit-home-halo { position: absolute; border-radius: 50%; pointer-events: none; }
-    .orbit-home-halo--one {
-      width: 178px; height: 178px;
-      border: 1px solid rgba(212,175,55,0.18);
-      background: radial-gradient(circle, rgba(212,175,55,0.045), transparent 68%);
-      box-shadow: inset 0 0 28px rgba(212,175,55,0.055), 0 0 22px rgba(212,175,55,0.05);
-      animation: orbit-pulse 5.5s ease-in-out infinite;
-    }
-    .orbit-home-halo--two {
-      width: 268px; height: 268px;
-      border: 1px dashed rgba(212,175,55,0.10); background: transparent;
-      animation: orbit-pulse 8.5s ease-in-out infinite reverse;
-    }
-    .orbit-home-halo--three {
-      width: 312px; height: 312px;
-      border: 1px solid rgba(212,175,55,0.045); background: transparent;
-    }
-    .orbit-home-core {
-      width: 120px; height: 120px; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      overflow: hidden;
-      background: linear-gradient(145deg, #28200f, #181208);
-      border: 2.5px solid rgba(212,175,55,0.52);
-      box-shadow: 0 0 0 6px rgba(212,175,55,0.065), 0 0 0 13px rgba(212,175,55,0.025),
-        0 0 44px rgba(212,175,55,0.24), 0 26px 52px -16px rgba(0,0,0,0.85),
-        inset 0 1px 0 rgba(255,255,255,0.10);
-      color: white; position: relative; z-index: 3;
-      animation: orbit-core-pulse 4.2s ease-in-out infinite;
-    }
+    .orbit-home-halo--one { width: 178px; height: 178px; border: 1px solid rgba(212,175,55,0.18); background: radial-gradient(circle, rgba(212,175,55,0.045), transparent 68%); box-shadow: inset 0 0 28px rgba(212,175,55,0.055), 0 0 22px rgba(212,175,55,0.05); animation: orbit-pulse 5.5s ease-in-out infinite; }
+    .orbit-home-halo--two { width: 268px; height: 268px; border: 1px dashed rgba(212,175,55,0.10); background: transparent; animation: orbit-pulse 8.5s ease-in-out infinite reverse; }
+    .orbit-home-halo--three { width: 312px; height: 312px; border: 1px solid rgba(212,175,55,0.045); background: transparent; }
+    .orbit-home-core { width: 120px; height: 120px; border-radius: 50%; display: flex; align-items: center; justify-content: center; overflow: hidden; background: linear-gradient(145deg, #28200f, #181208); border: 2.5px solid rgba(212,175,55,0.52); box-shadow: 0 0 0 6px rgba(212,175,55,0.065), 0 0 0 13px rgba(212,175,55,0.025), 0 0 44px rgba(212,175,55,0.24), 0 26px 52px -16px rgba(0,0,0,0.85), inset 0 1px 0 rgba(255,255,255,0.10); color: white; position: relative; z-index: 3; animation: orbit-core-pulse 4.2s ease-in-out infinite; }
     .orbit-home-core-media { width:100%; height:100%; border-radius:50%; background-size:cover; background-position:center; background-repeat:no-repeat; }
-    .orbit-home-core-text {
-      font-family: var(--font-display); font-size: 34px; font-weight: 800; letter-spacing: -0.04em;
-      background: linear-gradient(135deg, #f7eaac, #D4AF37);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-    }
+    .orbit-home-core-text { font-family: var(--font-display); font-size: 34px; font-weight: 800; letter-spacing: -0.04em; background: linear-gradient(135deg, #f7eaac, #D4AF37); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .orbit-home-ring { position:absolute; inset:0; animation: orbit-spin 34s linear infinite; z-index:2; }
-    .orbit-home-item {
-      position: absolute; left: 50%; top: 50%;
-      transform: translate(-50%, -50%) rotate(var(--angle)) translateY(calc(var(--radius) * -1));
-    }
-    .orbit-home-action {
-      width: 74px; height: 74px; border-radius: 50%;
-      border: 1.5px solid rgba(212,175,55,0.26);
-      background: rgba(12,10,7,0.80);
-      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
-      box-shadow: 0 0 0 1px rgba(212,175,55,0.09), 0 0 22px rgba(212,175,55,0.11),
-        0 18px 36px -10px rgba(0,0,0,0.65), inset 0 1px 0 rgba(255,255,255,0.09);
-      display:flex; align-items:center; justify-content:center; padding:5px;
-      cursor:pointer; animation: orbit-float 5.2s ease-in-out infinite;
-      animation-delay: var(--delay);
-      transition: border-color .22s ease, box-shadow .22s ease, transform .22s ease;
-      position: relative;
-    }
-    .orbit-home-action:hover {
-      border-color: rgba(212,175,55,0.58);
-      box-shadow: 0 0 0 2px rgba(212,175,55,0.14), 0 0 32px rgba(212,175,55,0.30),
-        0 22px 40px -10px rgba(0,0,0,0.70), inset 0 1px 0 rgba(255,255,255,0.13);
-      transform: scale(1.09);
-    }
+    .orbit-home-item { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(var(--angle)) translateY(calc(var(--radius) * -1)); }
+    .orbit-home-action { width: 74px; height: 74px; border-radius: 50%; border: 1.5px solid rgba(212,175,55,0.26); background: rgba(12,10,7,0.80); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: 0 0 0 1px rgba(212,175,55,0.09), 0 0 22px rgba(212,175,55,0.11), 0 18px 36px -10px rgba(0,0,0,0.65), inset 0 1px 0 rgba(255,255,255,0.09); display:flex; align-items:center; justify-content:center; padding:5px; cursor:pointer; animation: orbit-float 5.2s ease-in-out infinite; animation-delay: var(--delay); transition: border-color .22s ease, box-shadow .22s ease, transform .22s ease; position: relative; }
+    .orbit-home-action:hover { border-color: rgba(212,175,55,0.58); box-shadow: 0 0 0 2px rgba(212,175,55,0.14), 0 0 32px rgba(212,175,55,0.30), 0 22px 40px -10px rgba(0,0,0,0.70), inset 0 1px 0 rgba(255,255,255,0.13); transform: scale(1.09); }
     .orbit-home-action:active { transform: scale(0.95); transition-duration: .08s; }
-    .orbit-home-action.orbit-active {
-      border-color: rgba(212,175,55,0.75);
-      box-shadow: 0 0 0 3px rgba(212,175,55,0.22), 0 0 40px rgba(212,175,55,0.45),
-        0 22px 40px -10px rgba(0,0,0,0.70);
-      transform: scale(1.13);
-    }
-    .orbit-home-action-face {
-      width:100%; height:100%; border-radius:50%;
-      display:flex; align-items:center; justify-content:center; overflow:hidden;
-      background: linear-gradient(145deg, rgba(28,22,8,0.97), rgba(16,12,4,0.99));
-      animation: orbit-spin 34s linear infinite reverse;
-      border: 1px solid rgba(212,175,55,0.13);
-    }
+    .orbit-home-action.orbit-active { border-color: rgba(212,175,55,0.75); box-shadow: 0 0 0 3px rgba(212,175,55,0.22), 0 0 40px rgba(212,175,55,0.45), 0 22px 40px -10px rgba(0,0,0,0.70); transform: scale(1.13); }
+    .orbit-home-action-face { width:100%; height:100%; border-radius:50%; display:flex; align-items:center; justify-content:center; overflow:hidden; background: linear-gradient(145deg, rgba(28,22,8,0.97), rgba(16,12,4,0.99)); animation: orbit-spin 34s linear infinite reverse; border: 1px solid rgba(212,175,55,0.13); }
     .orbit-home-action-media { width:100%; height:100%; border-radius:50%; background-size:cover; background-position:center; background-repeat:no-repeat; }
-    .orbit-home-action-placeholder, .orbit-home-chip-placeholder {
-      width:100%; height:100%; border-radius:50%; display:block;
-      background: radial-gradient(circle at 50% 38%, rgba(212,175,55,0.55), rgba(212,175,55,0.08) 44%, transparent 56%),
-        linear-gradient(145deg, rgba(28,22,8,0.98), rgba(16,12,4,0.99));
-    }
+    .orbit-home-action-placeholder, .orbit-home-chip-placeholder { width:100%; height:100%; border-radius:50%; display:block; background: radial-gradient(circle at 50% 38%, rgba(212,175,55,0.55), rgba(212,175,55,0.08) 44%, transparent 56%), linear-gradient(145deg, rgba(28,22,8,0.98), rgba(16,12,4,0.99)); }
     .orbit-home-legend { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; margin-top:6px; }
-    .orbit-home-chip {
-      display:flex; align-items:center; gap:9px; min-width:0;
-      border: 1px solid rgba(212,175,55,0.15);
-      background: rgba(255,255,255,0.04);
-      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
-      border-radius: 999px; padding: 8px 12px 8px 7px;
-      font-size:11px; font-weight:600; color:rgba(255,255,255,0.50);
-      cursor:pointer; transition: border-color .20s, color .20s, background .20s, box-shadow .20s;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.28);
-    }
-    .orbit-home-chip:hover {
-      border-color: rgba(212,175,55,0.42); color: rgba(212,175,55,0.92);
-      background: rgba(212,175,55,0.07);
-      box-shadow: 0 0 18px rgba(212,175,55,0.13), 0 2px 10px rgba(0,0,0,0.32);
-    }
-    .orbit-home-chip-icon {
-      width:26px; height:26px; flex-shrink:0; border-radius:50%;
-      background: linear-gradient(145deg, rgba(212,175,55,0.28), rgba(180,130,20,0.16));
-      color: rgba(212,175,55,0.9); display:flex; align-items:center; justify-content:center;
-      overflow:hidden; border: 1px solid rgba(212,175,55,0.22);
-    }
-    .orbit-home-chip-icon img, .orbit-home-chip-icon span {
-      width:100%; height:100%; display:flex; align-items:center; justify-content:center; border-radius:50%;
-    }
+    .orbit-home-chip { display:flex; align-items:center; gap:9px; min-width:0; border: 1px solid rgba(212,175,55,0.15); background: rgba(255,255,255,0.04); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-radius: 999px; padding: 8px 12px 8px 7px; font-size:11px; font-weight:600; color:rgba(255,255,255,0.50); cursor:pointer; transition: border-color .20s, color .20s, background .20s, box-shadow .20s; box-shadow: 0 2px 10px rgba(0,0,0,0.28); }
+    .orbit-home-chip:hover { border-color: rgba(212,175,55,0.42); color: rgba(212,175,55,0.92); background: rgba(212,175,55,0.07); box-shadow: 0 0 18px rgba(212,175,55,0.13), 0 2px 10px rgba(0,0,0,0.32); }
+    .orbit-home-chip-icon { width:26px; height:26px; flex-shrink:0; border-radius:50%; background: linear-gradient(145deg, rgba(212,175,55,0.28), rgba(180,130,20,0.16)); color: rgba(212,175,55,0.9); display:flex; align-items:center; justify-content:center; overflow:hidden; border: 1px solid rgba(212,175,55,0.22); }
+    .orbit-home-chip-icon img, .orbit-home-chip-icon span { width:100%; height:100%; display:flex; align-items:center; justify-content:center; border-radius:50%; }
     .orbit-home-chip-icon img { object-fit:cover; }
     .orbit-home-chip-label { min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; letter-spacing:0.01em; }
     @keyframes orbit-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
@@ -983,15 +884,15 @@
     @keyframes orbit-pulse { 0%, 100% { opacity:1; transform:scale(1); } 50% { opacity:0.6; transform:scale(1.02); } }
     @keyframes orbit-core-pulse {
       0%, 100% { box-shadow: 0 0 0 6px rgba(212,175,55,0.065), 0 0 0 13px rgba(212,175,55,0.025), 0 0 44px rgba(212,175,55,0.24), 0 26px 52px -16px rgba(0,0,0,0.85), inset 0 1px 0 rgba(255,255,255,0.10); }
-      50% { box-shadow: 0 0 0 9px rgba(212,175,55,0.11), 0 0 0 18px rgba(212,175,55,0.04), 0 0 60px rgba(212,175,55,0.33), 0 26px 52px -16px rgba(0,0,0,0.85), inset 0 1px 0 rgba(255,255,255,0.13); }
+      50%       { box-shadow: 0 0 0 9px rgba(212,175,55,0.11), 0 0 0 18px rgba(212,175,55,0.04), 0 0 60px rgba(212,175,55,0.33), 0 26px 52px -16px rgba(0,0,0,0.85), inset 0 1px 0 rgba(255,255,255,0.13); }
     }
     @media (max-width: 380px) {
-      .orbit-home-stage  { height: 246px; }
-      .orbit-home-core   { width: 98px; height: 98px; }
+      .orbit-home-stage { height: 246px; }
+      .orbit-home-core { width: 98px; height: 98px; }
       .orbit-home-core-text { font-size: 28px; }
       .orbit-home-action { width: 62px; height: 62px; }
-      .orbit-home-halo--one   { width: 154px; height: 154px; }
-      .orbit-home-halo--two   { width: 232px; height: 232px; }
+      .orbit-home-halo--one { width: 154px; height: 154px; }
+      .orbit-home-halo--two { width: 232px; height: 232px; }
       .orbit-home-halo--three { width: 272px; height: 272px; }
     }
 
@@ -5976,7 +5877,7 @@
         <div class="section-title">Accesos del club</div>
         <div class="orbit-home-copy">
           <b id="home-orbit-title">Tu Universo Club 21</b>
-          <span id="home-orbit-subtitle">Premios, beneficios y rutas rápidas desde la home.</span>
+          <span id="home-orbit-subtitle">Accesos dinámicos para premios, ranking, locales y beneficios.</span>
         </div>
         <div class="orbit-home-stage">
           <div class="orbit-home-halo orbit-home-halo--three"></div>
@@ -6459,116 +6360,63 @@
     </div>
 
     <div id="ta-datos" style="display:none;">
-
-      <!-- DIAGNÓSTICO DE CONEXIÓN -->
       <div class="card" style="margin-bottom:14px;">
         <div class="section-title">🔌 Estado de conexión Firebase</div>
-        <div id="datos-fb-status" style="padding:14px;border-radius:12px;background:rgba(249,115,22,0.08);font-size:13px;line-height:1.6;color:var(--ink);">
-          Toca "Diagnosticar" para verificar el estado de la conexión.
-        </div>
+        <div id="datos-fb-status" style="padding:14px;border-radius:12px;background:rgba(249,115,22,0.08);font-size:13px;line-height:1.6;color:var(--ink);">Toca "Diagnosticar" para verificar el estado.</div>
         <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;">
-          <button onclick="window.forceCloudSync && window.forceCloudSync()" class="btn-primary" style="flex:1;min-width:140px;">
-            ↻ Sincronizar con la nube
-          </button>
-          <button onclick="_diagnosticarFirebase()" style="flex:1;min-width:140px;padding:12px;background:transparent;border:1.5px solid var(--line-strong);border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;color:var(--ink);font-family:var(--font-body);">
-            🔍 Diagnosticar
-          </button>
+          <button onclick="window.forceCloudSync&&window.forceCloudSync()" class="btn-primary" style="flex:1;min-width:140px;">↻ Sincronizar nube</button>
+          <button onclick="_diagnosticarFirebase()" style="flex:1;min-width:140px;padding:12px;background:transparent;border:1.5px solid var(--line-strong);border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;color:var(--ink);font-family:var(--font-body);">🔍 Diagnosticar</button>
         </div>
       </div>
-
-      <!-- RESUMEN DE DATOS -->
       <div class="card" style="margin-bottom:14px;">
         <div class="section-title">📊 Datos en Firebase ahora mismo</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;">
-          <div style="padding:14px;border-radius:12px;background:var(--brand-softer);text-align:center;">
-            <div id="datos-count-users" style="font-size:28px;font-weight:800;color:var(--brand-deep);">—</div>
-            <div style="font-size:11px;color:var(--ink-soft);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;">Clientes</div>
-          </div>
-          <div style="padding:14px;border-radius:12px;background:var(--brand-softer);text-align:center;">
-            <div id="datos-count-promos" style="font-size:28px;font-weight:800;color:var(--brand-deep);">—</div>
-            <div style="font-size:11px;color:var(--ink-soft);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;">Promociones</div>
-          </div>
-          <div style="padding:14px;border-radius:12px;background:var(--brand-softer);text-align:center;">
-            <div id="datos-count-prizes" style="font-size:28px;font-weight:800;color:var(--brand-deep);">—</div>
-            <div style="font-size:11px;color:var(--ink-soft);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;">Premios</div>
-          </div>
-          <div style="padding:14px;border-radius:12px;background:var(--brand-softer);text-align:center;">
-            <div id="datos-count-canjes" style="font-size:28px;font-weight:800;color:var(--brand-deep);">—</div>
-            <div style="font-size:11px;color:var(--ink-soft);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;">Canjes</div>
-          </div>
+          <div style="padding:14px;border-radius:12px;background:var(--brand-softer);text-align:center;"><div id="datos-count-users" style="font-size:28px;font-weight:800;color:var(--brand-deep);">—</div><div style="font-size:11px;color:var(--ink-soft);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;">Clientes</div></div>
+          <div style="padding:14px;border-radius:12px;background:var(--brand-softer);text-align:center;"><div id="datos-count-promos" style="font-size:28px;font-weight:800;color:var(--brand-deep);">—</div><div style="font-size:11px;color:var(--ink-soft);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;">Promociones</div></div>
+          <div style="padding:14px;border-radius:12px;background:var(--brand-softer);text-align:center;"><div id="datos-count-prizes" style="font-size:28px;font-weight:800;color:var(--brand-deep);">—</div><div style="font-size:11px;color:var(--ink-soft);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;">Premios</div></div>
+          <div style="padding:14px;border-radius:12px;background:var(--brand-softer);text-align:center;"><div id="datos-count-canjes" style="font-size:28px;font-weight:800;color:var(--brand-deep);">—</div><div style="font-size:11px;color:var(--ink-soft);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;">Canjes</div></div>
         </div>
-        <button onclick="_actualizarResumenDatos()" style="width:100%;padding:12px;background:transparent;border:1.5px solid var(--line-strong);border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;color:var(--ink);font-family:var(--font-body);">
-          Actualizar resumen
-        </button>
+        <button onclick="_actualizarResumenDatos()" style="width:100%;padding:12px;background:transparent;border:1.5px solid var(--line-strong);border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;color:var(--ink);font-family:var(--font-body);">Actualizar resumen</button>
       </div>
-
-      <!-- EXPORTAR -->
+      <div class="card" style="margin-bottom:14px;">
+        <div class="section-title">🔧 Reparar datos corruptos</div>
+        <div class="hint" style="margin-bottom:12px;font-size:12px;line-height:1.5;">Si ves letras extrañas (Ã³, â€", ðŸ) en los nombres de los satélites, clientes o promociones, este botón los corrige automáticamente tanto en Firebase como en localStorage.</div>
+        <div id="datos-repair-preview" style="display:none;padding:12px;border-radius:10px;background:var(--brand-softer);margin-bottom:12px;font-size:13px;line-height:1.6;"></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button onclick="_repararTextos(true)" class="btn-primary" style="flex:1;min-width:140px;">🔧 Reparar y guardar</button>
+          <button onclick="_repararTextos(false)" style="flex:1;min-width:140px;padding:12px;background:transparent;border:1.5px solid var(--line-strong);border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;color:var(--ink);font-family:var(--font-body);">👁 Solo previsualizar</button>
+        </div>
+      </div>
       <div class="card" style="margin-bottom:14px;">
         <div class="section-title">📥 Exportar backup completo</div>
-        <div class="hint" style="margin-bottom:12px;font-size:12px;line-height:1.5;">
-          Descarga todos tus datos: clientes, promociones, premios, canjes y configuración. Guárdalo como respaldo de seguridad.
-        </div>
+        <div class="hint" style="margin-bottom:12px;font-size:12px;line-height:1.5;">Descarga todos tus datos: clientes, promociones, premios, canjes y configuración.</div>
         <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <button onclick="_exportarBackup('json')" class="btn-primary" style="flex:1;min-width:140px;">
-            💾 Descargar JSON
-          </button>
-          <button onclick="_exportarBackup('csv')" style="flex:1;min-width:140px;padding:12px;background:transparent;border:1.5px solid var(--line-strong);border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;color:var(--ink);font-family:var(--font-body);">
-            📋 Clientes en CSV
-          </button>
+          <button onclick="_exportarBackup('json')" class="btn-primary" style="flex:1;min-width:140px;">💾 Descargar JSON</button>
+          <button onclick="_exportarBackup('csv')" style="flex:1;min-width:140px;padding:12px;background:transparent;border:1.5px solid var(--line-strong);border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;color:var(--ink);font-family:var(--font-body);">📋 Clientes CSV</button>
         </div>
       </div>
-
-      <!-- RESTAURAR -->
       <div class="card" style="margin-bottom:14px;">
         <div class="section-title">📤 Restaurar desde backup</div>
-        <div class="hint" style="margin-bottom:12px;font-size:12px;line-height:1.5;">
-          Sube un JSON exportado anteriormente. Hace un <b>merge inteligente</b>: agrega sin borrar datos existentes en Firebase.
-        </div>
-        <div class="field">
-          <label>Seleccionar archivo JSON</label>
-          <input type="file" id="datos-restore-file" accept=".json" onchange="_previsualizarRestore(this)"/>
-        </div>
+        <div class="hint" style="margin-bottom:12px;font-size:12px;line-height:1.5;">Sube un JSON exportado anteriormente. Hace merge inteligente sin borrar datos existentes.</div>
+        <div class="field"><label>Seleccionar archivo JSON</label><input type="file" id="datos-restore-file" accept=".json" onchange="_previsualizarRestore(this)"/></div>
         <div id="datos-restore-preview" style="display:none;padding:12px;border-radius:10px;background:var(--brand-softer);margin-bottom:12px;font-size:13px;line-height:1.6;"></div>
-        <button id="datos-restore-btn" onclick="_ejecutarRestore()" style="display:none;" class="btn-primary">
-          ✅ Restaurar datos en Firebase
-        </button>
+        <button id="datos-restore-btn" onclick="_ejecutarRestore()" style="display:none;" class="btn-primary">✅ Restaurar en Firebase</button>
       </div>
-
-      <!-- REGLAS FIRESTORE -->
       <div class="card" style="margin-bottom:14px;">
         <div class="section-title">⚙️ Reglas de Firestore (si muestra ERROR)</div>
-        <div class="hint" style="margin-bottom:12px;font-size:12px;line-height:1.5;">
-          Si el indicador muestra <b>LOCAL</b> o <b>ERROR</b>, las reglas de Firestore pueden haber expirado. Copia esto en Firebase Console → Firestore → Reglas:
+        <div class="hint" style="margin-bottom:12px;font-size:12px;line-height:1.5;">Si el indicador muestra LOCAL o ERROR, copia esto en Firebase Console → Firestore → Reglas:</div>
+        <div style="background:#0d1117;border-radius:10px;padding:14px;font-family:monospace;font-size:12px;color:#79c0ff;line-height:1.7;margin-bottom:12px;">
+          rules_version = '2';<br>service cloud.firestore {<br>&nbsp;&nbsp;match /databases/{database}/documents {<br>&nbsp;&nbsp;&nbsp;&nbsp;match /{document=**} {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allow read, write: if true;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}
         </div>
-        <div style="background:#0d1117;border-radius:10px;padding:14px;font-family:monospace;font-size:12px;color:#79c0ff;line-height:1.7;margin-bottom:12px;overflow-x:auto;">
-          rules_version = '2';<br>
-          service cloud.firestore {<br>
-          &nbsp;&nbsp;match /databases/{database}/documents {<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;match /{document=**} {<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allow read, write: if true;<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-          &nbsp;&nbsp;}<br>
-          }
-        </div>
-        <a href="https://console.firebase.google.com/project/club21-d883c/firestore/rules" target="_blank" class="btn-primary" style="display:block;text-align:center;text-decoration:none;padding:12px;">
-          🔗 Abrir Firebase Console
-        </a>
+        <a href="https://console.firebase.google.com/project/club21-d883c/firestore/rules" target="_blank" class="btn-primary" style="display:block;text-align:center;text-decoration:none;padding:12px;">🔗 Abrir Firebase Console</a>
       </div>
-
-      <!-- MIGRAR LOCAL → FIREBASE -->
       <div class="card">
         <div class="section-title">🔄 Subir datos locales a Firebase</div>
-        <div class="hint" style="margin-bottom:12px;font-size:12px;line-height:1.5;">
-          Si tienes clientes o promos guardados en este navegador que no están en la nube, este botón los sube sin borrar nada.
-        </div>
+        <div class="hint" style="margin-bottom:12px;font-size:12px;line-height:1.5;">Si tienes clientes o promos guardados en este navegador que no están en la nube, este botón los sube sin borrar nada.</div>
         <div id="datos-local-preview" style="margin-bottom:12px;font-size:13px;color:var(--ink-soft);padding:10px;background:var(--brand-softer);border-radius:10px;"></div>
-        <button onclick="_migrarLocalAFirebase()" class="btn-primary">
-          ☁️ Subir datos locales a Firebase
-        </button>
+        <button onclick="_migrarLocalAFirebase()" class="btn-primary">☁️ Subir datos locales a Firebase</button>
       </div>
-
     </div><!-- /ta-datos -->
-
   </div>
 
 </div>
@@ -15259,11 +15107,106 @@ window.loadMenuItemImage = loadMenuItemImage;
 
 window.parent.postMessage({ type: '__edit_mode_available' }, '*');
 
-  /* =====================================================
-     PANEL DE DATOS — diagnóstico, backup y restauración
-     ===================================================== */
+  /* ======================================================
+     REPARACIÓN DE ENCODING + PANEL DE DATOS
+     ====================================================== */
 
-  // Actualizar resumen de contadores desde la DB en memoria
+  // Función de reparación de texto corrupto (double-encoded UTF-8)
+  // Convierte: "EstaciÃ³n" -> "Estación", "ðŸ"¥" -> "🔥", etc.
+  function _fixDoubleEncoding(str) {
+    if (typeof str !== 'string') return str;
+    // Detectar si tiene patrones corruptos
+    if (!/[ÃÂ]|ðŸ|â€/.test(str)) return str;
+    try {
+      // Técnica: codificar como latin-1 para recuperar bytes originales, decodificar como UTF-8
+      var bytes = [];
+      for (var i = 0; i < str.length; i++) {
+        var code = str.charCodeAt(i);
+        if (code < 256) bytes.push(code);
+        else bytes.push(63); // '?' para chars fuera de latin-1
+      }
+      var uint8 = new Uint8Array(bytes);
+      var decoded = new TextDecoder('utf-8').decode(uint8);
+      // Solo usar el resultado si se eliminaron los patrones corruptos
+      if (decoded && !/[ÃÂ]{1,3}|ðŸ/.test(decoded) && decoded.length > 0) return decoded;
+    } catch(e) {}
+    return str;
+  }
+
+  // Reparar recursivamente un objeto/array entero
+  function _fixObjectEncoding(obj) {
+    if (typeof obj === 'string') return _fixDoubleEncoding(obj);
+    if (Array.isArray(obj)) return obj.map(_fixObjectEncoding);
+    if (obj && typeof obj === 'object') {
+      var result = {};
+      Object.keys(obj).forEach(function(k) { result[k] = _fixObjectEncoding(obj[k]); });
+      return result;
+    }
+    return obj;
+  }
+
+  // Detectar cuántos campos tienen texto corrupto
+  function _contarCorruptos(obj, count) {
+    count = count || { total: 0, broken: 0, samples: [] };
+    if (typeof obj === 'string') {
+      count.total++;
+      if (/[ÃÂ]|ðŸ|â€/.test(obj)) {
+        count.broken++;
+        if (count.samples.length < 5) count.samples.push(obj.slice(0, 40));
+      }
+    } else if (Array.isArray(obj)) {
+      obj.forEach(function(item) { _contarCorruptos(item, count); });
+    } else if (obj && typeof obj === 'object') {
+      Object.values(obj).forEach(function(v) { _contarCorruptos(v, count); });
+    }
+    return count;
+  }
+
+  // Reparar y guardar datos
+  window._repararTextos = async function(guardar) {
+    var previewEl = document.getElementById('datos-repair-preview');
+    previewEl.style.display = 'block';
+    previewEl.innerHTML = '⏳ Analizando datos...';
+
+    var stats = _contarCorruptos(db);
+    if (stats.broken === 0) {
+      previewEl.innerHTML = '✅ No se encontraron textos corruptos en los datos actuales.';
+      return;
+    }
+
+    var preview = '🔍 Encontrados <b>' + stats.broken + '</b> textos corruptos de <b>' + stats.total + '</b> campos.<br>';
+    preview += 'Ejemplos: <i>' + stats.samples.map(function(s){ return '"' + s + '"'; }).join(', ') + '</i>';
+    previewEl.innerHTML = preview;
+
+    if (!guardar) return;
+
+    previewEl.innerHTML += '<br>⏳ Reparando y guardando...';
+
+    var fixedDb = _fixObjectEncoding(db);
+    db = fixedDb;
+
+    try { localStorage.setItem('estacion21_db_v2', JSON.stringify(db)); } catch(e) {}
+
+    if (window._fbReady && window._fb) {
+      try {
+        await window._fb.saveDb(db);
+        previewEl.innerHTML = '✅ <b>Reparación completada y guardada en Firebase.</b><br>Recarga la app para ver los cambios.';
+        showToast('✅ Textos corruptos reparados y guardados');
+        // Re-render vistas
+        if (typeof renderAdminClients === 'function') renderAdminClients();
+        if (typeof renderAdminPromos === 'function') renderAdminPromos();
+        if (typeof renderHomeOrbit === 'function') renderHomeOrbit();
+      } catch(e) {
+        previewEl.innerHTML = '⚠️ Reparado localmente, pero falló al guardar en Firebase: ' + e.message;
+        showToast('⚠️ Reparado localmente — Firebase no disponible');
+      }
+    } else {
+      previewEl.innerHTML = '✅ Reparado en localStorage. Firebase no disponible — conecta y vuelve a tocar.';
+      showToast('✅ Reparado en localStorage');
+    }
+    _actualizarResumenDatos();
+  };
+
   window._actualizarResumenDatos = function() {
     try {
       document.getElementById('datos-count-users').textContent  = (db.users  || []).length;
@@ -15271,7 +15214,6 @@ window.parent.postMessage({ type: '__edit_mode_available' }, '*');
       document.getElementById('datos-count-prizes').textContent = (db.prizes || []).length;
       document.getElementById('datos-count-canjes').textContent = (db.canjes || []).length;
     } catch(e) {}
-    // Mostrar estado local de localStorage
     try {
       var localRaw = localStorage.getItem('estacion21_db_v2');
       var localDb  = localRaw ? JSON.parse(localRaw) : null;
@@ -15284,255 +15226,151 @@ window.parent.postMessage({ type: '__edit_mode_available' }, '*');
     } catch(e) {}
   };
 
-  // Diagnóstico completo de Firebase
   window._diagnosticarFirebase = async function() {
     var el = document.getElementById('datos-fb-status');
     if (!el) return;
-    el.innerHTML = '⏳ Diagnosticando conexión...';
+    el.innerHTML = '⏳ Diagnosticando...';
     var lines = [];
     lines.push('🔑 Proyecto: <b>club21-d883c</b>');
-    lines.push('📡 API Key: <b>AIzaSyCZBYgl…</b> (configurada)');
-
     if (!window._fbReady || !window._fb) {
-      lines.push('❌ <b>Firebase NO está cargado.</b> Causas posibles:');
-      lines.push('&nbsp;&nbsp;• Sin conexión a internet');
-      lines.push('&nbsp;&nbsp;• El CDN de Firebase está bloqueado');
-      lines.push('&nbsp;&nbsp;• El archivo se abrió desde file:// en vez de un servidor web');
+      lines.push('❌ <b>Firebase NO cargado.</b> Posibles causas:');
+      lines.push('&nbsp;&nbsp;• Sin internet · CDN bloqueado · archivo abierto desde file://');
       el.innerHTML = lines.join('<br>');
-      el.style.background = 'rgba(220,38,38,0.08)';
-      el.style.color = '#991B1B';
+      el.style.background = 'rgba(220,38,38,0.08)'; el.style.color = '#991B1B';
       return;
     }
-
-    lines.push('✅ Firebase SDK cargado correctamente');
+    lines.push('✅ Firebase SDK cargado');
     try {
       var cloudDb = await window._fb.loadDb();
       if (cloudDb) {
-        lines.push('✅ <b>Conexión a Firestore OK</b>');
-        lines.push('👥 Clientes en nube: <b>' + (cloudDb.users||[]).length + '</b>');
-        lines.push('📣 Promos en nube: <b>' + (cloudDb.promos||[]).length + '</b>');
-        lines.push('🏆 Premios en nube: <b>' + (cloudDb.prizes||[]).length + '</b>');
-        lines.push('🔄 Canjes en nube: <b>' + (cloudDb.canjes||[]).length + '</b>');
-        el.style.background = 'rgba(22,163,74,0.08)';
-        el.style.color = '#14532D';
-        // Actualizar contadores
+        lines.push('✅ <b>Firestore OK</b>');
+        lines.push('👥 Clientes: <b>' + (cloudDb.users||[]).length + '</b> · 📣 Promos: <b>' + (cloudDb.promos||[]).length + '</b>');
+        lines.push('🏆 Premios: <b>' + (cloudDb.prizes||[]).length + '</b> · 🔄 Canjes: <b>' + (cloudDb.canjes||[]).length + '</b>');
+        el.style.background = 'rgba(22,163,74,0.08)'; el.style.color = '#14532D';
         db = Object.assign(db, cloudDb);
         window._actualizarResumenDatos();
-        showToast('✅ Diagnóstico completo — Firebase OK');
+        showToast('✅ Firebase OK');
       } else {
-        lines.push('⚠️ Firestore conectado pero devolvió datos vacíos.');
-        lines.push('Verifica las reglas de seguridad en Firebase Console.');
-        el.style.background = 'rgba(217,119,6,0.08)';
-        el.style.color = '#92400E';
+        lines.push('⚠️ Firestore conectado pero sin datos. Verifica reglas de seguridad.');
+        el.style.background = 'rgba(217,119,6,0.08)'; el.style.color = '#92400E';
       }
     } catch(e) {
-      lines.push('❌ <b>Error al leer Firestore:</b> ' + e.message);
-      if (e.message.includes('permission') || e.message.includes('denied')) {
-        lines.push('👉 <b>Solución:</b> Las reglas de Firestore están bloqueando el acceso. Copia las reglas de la sección de abajo en Firebase Console.');
-      }
-      el.style.background = 'rgba(220,38,38,0.08)';
-      el.style.color = '#991B1B';
+      lines.push('❌ Error: ' + e.message);
+      if (/permission|denied/.test(e.message)) lines.push('👉 Las reglas de Firestore están bloqueando — copia las reglas de abajo.');
+      el.style.background = 'rgba(220,38,38,0.08)'; el.style.color = '#991B1B';
     }
     el.innerHTML = lines.join('<br>');
   };
 
-  // Exportar backup completo
   window._exportarBackup = function(formato) {
     try {
       if (formato === 'csv') {
-        // CSV de clientes
         var cols = ['id','name','phone','dni','points','registered','email'];
         var rows = [cols.join(',')];
-        (db.users || []).forEach(function(u) {
-          rows.push(cols.map(function(c) {
-            var v = u[c] != null ? String(u[c]) : '';
-            return '"' + v.replace(/"/g,'""') + '"';
-          }).join(','));
+        (db.users||[]).forEach(function(u) {
+          rows.push(cols.map(function(c){ var v = u[c]!=null?String(u[c]):''; return '"'+v.replace(/"/g,'""')+'"'; }).join(','));
         });
-        var csvBlob = new Blob([rows.join('
-')], {type:'text/csv;charset=utf-8;'});
-        var csvUrl  = URL.createObjectURL(csvBlob);
-        var csvA    = document.createElement('a');
-        csvA.href   = csvUrl;
-        csvA.download = 'club21_clientes_' + new Date().toISOString().slice(0,10) + '.csv';
-        csvA.click();
-        URL.revokeObjectURL(csvUrl);
-        showToast('📋 CSV de clientes descargado (' + (db.users||[]).length + ' registros)');
+        var blob = new Blob([rows.join('\n')], {type:'text/csv;charset=utf-8;'});
+        var a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'club21_clientes_' + new Date().toISOString().slice(0,10) + '.csv';
+        a.click(); URL.revokeObjectURL(a.href);
+        showToast('📋 CSV descargado — ' + (db.users||[]).length + ' clientes');
         return;
       }
-
-      // JSON completo
-      var backup = {
-        exportedAt: new Date().toISOString(),
-        version:    db.version || 3,
-        nextId:     db.nextId  || 500,
-        users:      db.users   || [],
-        promos:     db.promos  || [],
-        prizes:     db.prizes  || [],
-        canjes:     db.canjes  || [],
-        config:     db.config  || {},
-        menus:      db.menus   || {},
-        locales:    db.locales || [],
-      };
-      var jsonStr  = JSON.stringify(backup, null, 2);
-      var jsonBlob = new Blob([jsonStr], {type:'application/json'});
-      var jsonUrl  = URL.createObjectURL(jsonBlob);
-      var jsonA    = document.createElement('a');
-      jsonA.href   = jsonUrl;
-      jsonA.download = 'club21_backup_' + new Date().toISOString().slice(0,10) + '.json';
-      jsonA.click();
-      URL.revokeObjectURL(jsonUrl);
-      var sizeKB = Math.round(jsonStr.length / 1024);
-      showToast('💾 Backup descargado — ' + (backup.users.length) + ' clientes · ' + sizeKB + ' KB');
-    } catch(e) {
-      showToast('❌ Error al exportar: ' + e.message);
-      console.error('[exportarBackup]', e);
-    }
+      var backup = { exportedAt: new Date().toISOString(), version: db.version||3, nextId: db.nextId||500, users: db.users||[], promos: db.promos||[], prizes: db.prizes||[], canjes: db.canjes||[], config: db.config||{}, menus: db.menus||{}, locales: db.locales||[] };
+      var str = JSON.stringify(backup, null, 2);
+      var blob = new Blob([str], {type:'application/json'});
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'club21_backup_' + new Date().toISOString().slice(0,10) + '.json';
+      a.click(); URL.revokeObjectURL(a.href);
+      showToast('💾 Backup descargado — ' + (backup.users.length) + ' clientes · ' + Math.round(str.length/1024) + ' KB');
+    } catch(e) { showToast('❌ Error al exportar: ' + e.message); }
   };
 
-  // Previsualizar archivo de restore antes de ejecutar
   window._restoreData = null;
   window._previsualizarRestore = function(input) {
-    var file = input.files[0];
-    if (!file) return;
+    var file = input.files[0]; if (!file) return;
     var reader = new FileReader();
     reader.onload = function(e) {
       try {
         var data = JSON.parse(e.target.result);
         window._restoreData = data;
-        var previewEl = document.getElementById('datos-restore-preview');
-        var btnEl     = document.getElementById('datos-restore-btn');
-        previewEl.innerHTML = '📋 <b>Contenido del backup:</b><br>'
-          + '👥 Clientes: <b>' + (data.users||[]).length + '</b><br>'
-          + '📣 Promos: <b>' + (data.promos||[]).length + '</b><br>'
-          + '🏆 Premios: <b>' + (data.prizes||[]).length + '</b><br>'
-          + '📅 Exportado: <b>' + (data.exportedAt || 'desconocido') + '</b><br><br>'
-          + '⚠️ Se hará un <b>merge inteligente</b>: los datos del backup se añaden a Firebase sin borrar clientes ni promos existentes.';
-        previewEl.style.display = 'block';
-        btnEl.style.display = 'block';
-      } catch(err) {
-        showToast('❌ Archivo JSON inválido: ' + err.message);
-      }
+        document.getElementById('datos-restore-preview').innerHTML = '📋 Clientes: <b>'+(data.users||[]).length+'</b> · Promos: <b>'+(data.promos||[]).length+'</b> · Premios: <b>'+(data.prizes||[]).length+'</b><br>📅 Exportado: <b>'+(data.exportedAt||'desconocido')+'</b><br><br>⚠️ Se hará merge inteligente — no borra datos existentes.';
+        document.getElementById('datos-restore-preview').style.display = 'block';
+        document.getElementById('datos-restore-btn').style.display = 'block';
+      } catch(err) { showToast('❌ JSON inválido: ' + err.message); }
     };
     reader.readAsText(file);
   };
 
-  // Ejecutar restauración
   window._ejecutarRestore = async function() {
-    var data = window._restoreData;
-    if (!data) { showToast('No hay datos para restaurar'); return; }
-    if (!window._fbReady || !window._fb) {
-      showToast('❌ Firebase no disponible. Verifica la conexión.');
-      return;
-    }
+    var data = window._restoreData; if (!data) return;
+    if (!window._fbReady || !window._fb) { showToast('❌ Firebase no disponible'); return; }
     var btnEl = document.getElementById('datos-restore-btn');
-    btnEl.disabled = true;
-    btnEl.textContent = '⏳ Restaurando...';
+    btnEl.disabled = true; btnEl.textContent = '⏳ Restaurando...';
     try {
-      // Merge: combinar datos del backup con los existentes sin duplicados
-      var existingIds = new Set((db.users||[]).map(function(u){ return String(u.id); }));
-      var newUsers = (data.users||[]).filter(function(u){ return !existingIds.has(String(u.id)); });
-      var mergedUsers = (db.users||[]).concat(newUsers);
-
-      var existingPromoIds = new Set((db.promos||[]).map(function(p){ return String(p.id); }));
-      var newPromos = (data.promos||[]).filter(function(p){ return !existingPromoIds.has(String(p.id)); });
-      var mergedPromos = (db.promos||[]).concat(newPromos);
-
-      var mergedPrizes = data.prizes && data.prizes.length > 0 ? data.prizes : db.prizes;
-
-      var payload = {
-        users:   mergedUsers,
-        promos:  mergedPromos,
-        prizes:  mergedPrizes  || db.prizes  || [],
-        canjes:  db.canjes     || [],
-        nextId:  Math.max(db.nextId||500, data.nextId||500),
-        version: db.version    || 3,
-        config:  Object.assign({}, data.config||{}, db.config||{}),
-        menus:   Object.assign({}, data.menus||{}, db.menus||{}),
-        locales: (db.locales&&db.locales.length) ? db.locales : (data.locales||[]),
-      };
-
+      var existIds = new Set((db.users||[]).map(function(u){ return String(u.id); }));
+      var newUsers = (data.users||[]).filter(function(u){ return !existIds.has(String(u.id)); });
+      var existPromoIds = new Set((db.promos||[]).map(function(p){ return String(p.id); }));
+      var newPromos = (data.promos||[]).filter(function(p){ return !existPromoIds.has(String(p.id)); });
+      var payload = { users: (db.users||[]).concat(newUsers), promos: (db.promos||[]).concat(newPromos), prizes: data.prizes&&data.prizes.length?data.prizes:db.prizes||[], canjes: db.canjes||[], nextId: Math.max(db.nextId||500,data.nextId||500), version: db.version||3, config: Object.assign({},data.config||{},db.config||{}), menus: Object.assign({},data.menus||{},db.menus||{}), locales: (db.locales&&db.locales.length)?db.locales:(data.locales||[]) };
       await window._fb.saveDb(payload);
       db = payload;
       try { localStorage.setItem('estacion21_db_v2', JSON.stringify(db)); } catch(e) {}
-
-      showToast('✅ Restauración completada — ' + mergedUsers.length + ' clientes · ' + mergedPromos.length + ' promos');
-      btnEl.textContent = '✅ Restaurado exitosamente';
-      window._actualizarResumenDatos();
-      renderAdminClients();
-      if (typeof renderAdminPromos === 'function') renderAdminPromos();
-    } catch(err) {
-      showToast('❌ Error al restaurar: ' + err.message);
-      console.error('[ejecutarRestore]', err);
-      btnEl.disabled = false;
-      btnEl.textContent = '✅ Restaurar datos en Firebase';
-    }
+      showToast('✅ Restaurado — ' + payload.users.length + ' clientes · ' + payload.promos.length + ' promos');
+      btnEl.textContent = '✅ Restaurado'; window._actualizarResumenDatos();
+      if (typeof renderAdminClients==='function') renderAdminClients();
+    } catch(e) { showToast('❌ Error: ' + e.message); btnEl.disabled=false; btnEl.textContent='✅ Restaurar en Firebase'; }
   };
 
-  // Migrar localStorage → Firebase sin borrar nube
   window._migrarLocalAFirebase = async function() {
-    if (!window._fbReady || !window._fb) {
-      showToast('❌ Firebase no disponible');
-      return;
-    }
+    if (!window._fbReady||!window._fb) { showToast('❌ Firebase no disponible'); return; }
     try {
       var localRaw = localStorage.getItem('estacion21_db_v2');
-      if (!localRaw) { showToast('No hay datos en localStorage para migrar'); return; }
+      if (!localRaw) { showToast('No hay datos locales para migrar'); return; }
       var localDb = JSON.parse(localRaw);
-
-      showToast('⏳ Subiendo datos locales a Firebase...');
-      var cloudDb = await window._fb.loadDb();
-      if (!cloudDb) cloudDb = { users:[], promos:[], prizes:[], canjes:[] };
-
-      // Merge: subir solo registros que no están en la nube
-      var cloudUserIds  = new Set((cloudDb.users||[]).map(function(u){ return String(u.id); }));
+      showToast('⏳ Subiendo...');
+      var cloudDb = await window._fb.loadDb() || {users:[],promos:[],prizes:[],canjes:[]};
+      var cloudUserIds = new Set((cloudDb.users||[]).map(function(u){ return String(u.id); }));
       var cloudPromoIds = new Set((cloudDb.promos||[]).map(function(p){ return String(p.id); }));
-
-      var newUsers  = (localDb.users||[]).filter(function(u){ return !cloudUserIds.has(String(u.id)); });
+      var newUsers = (localDb.users||[]).filter(function(u){ return !cloudUserIds.has(String(u.id)); });
       var newPromos = (localDb.promos||[]).filter(function(p){ return !cloudPromoIds.has(String(p.id)); });
-
-      if (newUsers.length === 0 && newPromos.length === 0) {
-        showToast('✅ Todos los datos locales ya están en Firebase. Nada que migrar.');
-        return;
-      }
-
-      var mergedDb = {
-        users:   (cloudDb.users||[]).concat(newUsers),
-        promos:  (cloudDb.promos||[]).concat(newPromos),
-        prizes:  cloudDb.prizes  && cloudDb.prizes.length  ? cloudDb.prizes  : (localDb.prizes||[]),
-        canjes:  cloudDb.canjes  || localDb.canjes  || [],
-        nextId:  Math.max(cloudDb.nextId||500, localDb.nextId||500),
-        version: cloudDb.version || localDb.version || 3,
-        config:  Object.assign({}, localDb.config||{}, cloudDb.config||{}),
-        menus:   Object.assign({}, localDb.menus||{}, cloudDb.menus||{}),
-        locales: cloudDb.locales && cloudDb.locales.length ? cloudDb.locales : (localDb.locales||[]),
-      };
-
-      await window._fb.saveDb(mergedDb);
-      db = mergedDb;
+      if (!newUsers.length && !newPromos.length) { showToast('✅ Datos ya sincronizados — nada nuevo que subir'); return; }
+      var mergedDb = { users: (cloudDb.users||[]).concat(newUsers), promos: (cloudDb.promos||[]).concat(newPromos), prizes: (cloudDb.prizes&&cloudDb.prizes.length)?cloudDb.prizes:(localDb.prizes||[]), canjes: cloudDb.canjes||localDb.canjes||[], nextId: Math.max(cloudDb.nextId||500,localDb.nextId||500), version: cloudDb.version||localDb.version||3, config: Object.assign({},localDb.config||{},cloudDb.config||{}), menus: Object.assign({},localDb.menus||{},cloudDb.menus||{}), locales: (cloudDb.locales&&cloudDb.locales.length)?cloudDb.locales:(localDb.locales||[]) };
+      await window._fb.saveDb(mergedDb); db = mergedDb;
       try { localStorage.setItem('estacion21_db_v2', JSON.stringify(db)); } catch(e) {}
-
-      showToast('☁️ Migración completada — ' + newUsers.length + ' clientes nuevos · ' + newPromos.length + ' promos nuevas subidas a Firebase');
+      showToast('☁️ ' + newUsers.length + ' clientes y ' + newPromos.length + ' promos subidos a Firebase');
       window._actualizarResumenDatos();
-      renderAdminClients();
-      if (typeof renderAdminPromos === 'function') renderAdminPromos();
-    } catch(e) {
-      showToast('❌ Error en migración: ' + e.message);
-      console.error('[migrarLocalAFirebase]', e);
-    }
+      if (typeof renderAdminClients==='function') renderAdminClients();
+    } catch(e) { showToast('❌ Error: ' + e.message); }
   };
 
-  // Auto-actualizar resumen cuando se abre la pestaña
-  (function() {
+  // Auto-reparación silenciosa al cargar: corregir encoding en localStorage
+  (function _autoRepairOnLoad() {
+    try {
+      var localRaw = localStorage.getItem('estacion21_db_v2');
+      if (!localRaw) return;
+      var localDb = JSON.parse(localRaw);
+      var stats = _contarCorruptos(localDb);
+      if (stats.broken > 0) {
+        console.log('[Club21] Auto-reparando ' + stats.broken + ' textos corruptos en localStorage...');
+        var fixedDb = _fixObjectEncoding(localDb);
+        try { localStorage.setItem('estacion21_db_v2', JSON.stringify(fixedDb)); } catch(e) {}
+        console.log('[Club21] Textos reparados en localStorage.');
+      }
+    } catch(e) { console.warn('[Club21] Auto-repair error:', e); }
+  })();
+
+  // Auto-actualizar al abrir la pestaña Datos
+  (function _patchATab() {
     var origATab = window.aTab;
     if (typeof origATab === 'function') {
       window.aTab = function(id, el) {
         origATab(id, el);
         if (id === 'ta-datos') {
-          setTimeout(function() {
-            window._actualizarResumenDatos();
-            window._diagnosticarFirebase();
-          }, 150);
+          setTimeout(function() { window._actualizarResumenDatos(); window._diagnosticarFirebase(); }, 150);
         }
       };
     }
